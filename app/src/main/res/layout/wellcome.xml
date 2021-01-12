@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/setting"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/parent_name"
+        android:layout_above="@+id/footer"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginRight="-40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ucb111"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/add"
+        >
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/add1"
+            android:background="@drawable/list_bg"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_gravity="center_vertical"
+            android:textColor="#093"
+            android:textStyle="bold"
+            android:textSize="60dp"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:background="@drawable/list_bg1"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:text="Click to ADD" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0aa"
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/logo"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bg_img" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/logo"
+            android:id="@+id/company"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:text="UEnics" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_below="@+id/company"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="#fff"
+            android:text="Bringing Electronics to Life" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/edit1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg1"
+        android:id="@+id/header1"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/pointer11"
+            android:src="@drawable/pointer"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="true"
+            android:text="SWITCH_NAME_0"
+            android:layout_toRightOf="@+id/pointer11"
+            android:layout_centerVertical="true"/>
+
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:text="8"
+            android:textColor="#fff"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:id="@+id/speed"
+            android:paddingBottom="7dp"
+            android:paddingLeft="16dp"
+            android:background="@drawable/indicator"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/parent_name"
+        android:background="#888"
+        android:padding="5dp">
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/home_name"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/design1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/home_name"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:text="HOME NAME"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/home_name"
+            android:src="@drawable/design1"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/parent_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:dividerHeight="0dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1b241e"
+    android:id="@+id/footer"
+    android:padding="6dp"
+    android:layout_alignParentBottom="true">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/logo1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/design1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/logo1"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:text="SMART HOME"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/logo1"
+        android:src="@drawable/design1"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/try11"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/try1"
+        android:background="@drawable/list_bg1"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/pointer1"
+            android:src="@drawable/list_bg"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:id="@+id/editText1"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="true"
+            android:text="SWITCH_NAME_0"
+            android:layout_toRightOf="@+id/pointer1"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/edit_switch"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/switch11"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit" />
+
+        <Button
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/switch11"
+            android:layout_toLeftOf="@+id/seekBar1"
+            android:background="@drawable/not_pressed"
+            />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="47dp"
+            android:scaleType="fitXY"
+            android:id="@+id/seekBar1"
+            android:src="@drawable/design1"
+            android:layout_toLeftOf="@+id/next1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"/>
+        <RelativeLayout
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:background="@drawable/list_bg"
+            android:id="@+id/next1"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/next"
+                android:layout_marginTop="-3dp"
+                android:text="8"
+                android:textColor="#093"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

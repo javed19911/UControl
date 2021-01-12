@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:id="@+id/a22"
+    android:background="@drawable/list_bg2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of SMART ROOM"
+        android:textStyle="bold"
+        android:id="@+id/ti"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#093"
+        android:padding="10dp"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="No. of Smart room"
+        android:textColorHint="#093"
+       android:inputType="number"
+        android:background="@drawable/list_bg2"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#093"
+        android:id="@+id/smartroom"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/room_ok"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#fff"
+            android:background="@drawable/list_bg1"
+            android:textStyle="bold"
+            android:text="SET"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/skip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#fff"
+            android:background="@drawable/list_bg1"
+            android:textStyle="bold"
+            android:text="SKIP"/>
+    </LinearLayout>
+
+</LinearLayout>
