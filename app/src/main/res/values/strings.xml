@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">UControl</string>
+
+
+    <string name="login_page_text"><u>Login Page</u></string>
+    <string name="shared_pref">shared_intello_generic</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="id">id</string>
+
+    <string name="empty_date">__/__/____</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--empty state-->
+    <string name="empty_screen">We do not have anything\nhere right now.</string>
+    <string name="please_retry">Please Retry</string>
+    <string name="retry">Retry</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Credentials</string>
+    <string name="username">User Name</string>
+    <string name="welcome">Welcome\nIntello Pilot</string>
+    <string name="login">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ground_truth">Enter Ground Truth Value</string>
+    <string name="tap_text">Tap fruit and record</string>
+    <string name="stop_text">Tap to stop analysing</string>
+
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_message">You must grant permission to access camera and external storage to run this application.</string>
+    <string name="permission_warning">All permissions are required.</string>
+
 </resources>

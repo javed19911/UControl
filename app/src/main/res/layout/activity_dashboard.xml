@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="vmDashboard"
+            type="com.smarthome.uenics.ucontrol.ui.dashboard.VMDashbord" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.dashboard.DashboardActivity">
+
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/custom_navigation_toolbar" />
+
+
+       <!-- <View
+            android:id="@+id/separator"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+
+        <TextView
+            android:id="@+id/commoditytxt"
+            style="@style/MyTextView.Heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="Commodity"
+            app:layout_constraintBottom_toTopOf="@+id/separator1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator"/>
+
+
+        <Spinner
+            android:id="@+id/commodities_spinner"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_bg"
+            android:entries="@{vmDashboard.commodities}"
+            android:onItemSelected="@{(parent, view, position, id)->vmDashboard.onCommoditySelected(parent,position)}"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/commoditytxt"
+            app:layout_constraintTop_toBottomOf="@id/separator" />
+
+
+
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commodities_spinner" />-->
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            android:background="?android:attr/detailsElementBackground" />
+
+
+        <!-- <androidx.recyclerview.widget.RecyclerView
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:id="@+id/lots"
+             android:layout_marginTop="3dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/header"/>
+
+ -->
+
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/address_looking_up"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{vmDashboard.isLoading ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!-- <androidx.drawerlayout.widget.DrawerLayout
+         android:id="@+id/drawer_layout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:fitsSystemWindows="true">
+
+          <com.google.android.material.navigation.NavigationView
+             android:id="@+id/nav_view"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_gravity="start"
+             android:fitsSystemWindows="true"
+             app:headerLayout="@layout/navigation_header"
+             app:menu="@menu/navigation_drawer"
+             app:itemIconTint="#444444"
+             app:itemBackground="@drawable/bg_drawer_item"
+             android:background="@color/bg_color"/>
+
+
+
+
+
+
+     </androidx.drawerlayout.widget.DrawerLayout>-->
+</layout>
+

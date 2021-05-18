@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="vmDashboard"
+            type="com.smarthome.uenics.ucontrol.ui.dashboard.VMDashbord" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.dashboard.DashboardActivity">
+
+        <TextView
+            android:id="@+id/commoditytxt"
+            style="@style/MyTextView.Heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="Homes"
+            app:layout_constraintBottom_toTopOf="@+id/separator1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <Spinner
+            android:id="@+id/commodities_spinner"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_bg"
+            android:entries="@{vmDashboard.smartHomes}"
+            android:onItemSelected="@{(parent, view, position, id)->vmDashboard.onCommoditySelected(parent,position)}"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/commoditytxt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commodities_spinner" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
